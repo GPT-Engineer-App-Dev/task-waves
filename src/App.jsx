@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { Flex, Box, Spacer } from "@chakra-ui/react";
 import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
