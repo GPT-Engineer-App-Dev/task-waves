@@ -2,6 +2,7 @@ import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { Flex, Box, Spacer } from "@chakra-ui/react";
 import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
+import Index from './pages/Index.jsx';
 
 function App() {
   const Navbar = () => (
@@ -23,7 +24,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Index />} />
+        <Route path="/" element={<Index />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
